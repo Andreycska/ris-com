@@ -6031,11 +6031,30 @@ body {
   .member__title::before, .member__title:after {
     display: none; }
 
+.member__block {
+  display: flex; }
+
 .member__info_boss {
-  text-align: center; }
+  flex: 0 0 17%;
+  padding-right: 2rem;
+  margin-bottom: 2rem; }
 
 .member__img {
-  margin: 0 auto; }
+  margin-bottom: 1rem; }
+
+.member__icon {
+  width: 2rem;
+  height: auto; }
+
+.member__link {
+  font-size: 1.05rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #004AF2;
+  text-decoration: none;
+  position: relative;
+  transition: color .2s linear;
+  cursor: pointer; }
 
 .member__contacts_inner {
   margin-bottom: 3rem;
