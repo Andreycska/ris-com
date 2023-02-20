@@ -5588,7 +5588,8 @@ body {
 
 .sertificate {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  flex-direction: row-reverse; }
 
 .sertificate__item {
   flex: 0 0 20%;
@@ -5909,6 +5910,70 @@ body {
   width: 100%;
   background-color: #FF3E2F; }
 
+.magazin__title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 900;
+  color: #2C2C2C; }
+
+.magazin__item {
+  display: flex;
+  margin-bottom: 6rem; }
+
+.magazin__description {
+  display: block; }
+
+.magazin__text {
+  display: block;
+  margin-bottom: 1rem; }
+
+.magazin__paragraph {
+  padding-bottom: 2rem; }
+
+.magazin__bold {
+  font-weight: 900; }
+
+.magazin__info {
+  flex: 0 0 25%;
+  padding-left: 2rem; }
+
+.magazin__download {
+  margin-top: 1rem; }
+
+.magazin__icon {
+  width: 2rem;
+  height: auto; }
+
+.magazin__link_download {
+  display: inline-block;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #004AF2;
+  text-decoration: none;
+  position: relative;
+  transition: color .2s linear;
+  cursor: pointer; }
+  .magazin__link_download::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #004AF2;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    z-index: 1;
+    transition: all .2s linear; }
+  .magazin__link_download:focus {
+    outline: none; }
+  .magazin__link_download:focus, .magazin__link_download:hover {
+    color: #FF3E2F; }
+  .magazin__link_download:focus::after, .magazin__link_download:hover::after {
+    width: 100%;
+    background-color: #FF3E2F; }
+
 .publication {
   margin-bottom: 3rem;
   display: grid;
@@ -5950,6 +6015,61 @@ body {
   font-size: 14px;
   line-height: 1.2;
   color: #585858; }
+
+.member_item {
+  margin-bottom: 6rem; }
+
+.member__title {
+  padding: 0 0 .5rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid #e4e4e4;
+  position: relative; }
+  .member__title::before, .member__title:after {
+    display: none; }
+
+.member__info_boss {
+  text-align: center; }
+
+.member__img {
+  margin: 0 auto; }
+
+.member__contacts_inner {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3rem;
+  column-gap: 2rem; }
+
+.member__contacts_item {
+  padding: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #e4e4e4;
+  border-radius: .2rem;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); }
+
+.member__text {
+  padding-bottom: 2rem; }
+  .member__text:last-child {
+    padding: 0; }
+  .member__text span {
+    display: block;
+    font-weight: 900;
+    padding-bottom: 2rem; }
+
+.member__list {
+  margin-left: 2rem;
+  padding-left: 2rem; }
+
+.member__list_iten {
+  list-style-type: disc; }
 
 .contacts {
   width: 100%;
